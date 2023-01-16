@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Centralizer",
+  "version": "1.0",
+  "description": "Move and resize your window to be central in your monitor",
+  "icons": {
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "permissions": [
+    "system.display",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {},
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "commands": {
+    "centralize": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C",
+        "mac": "Command+Shift+C"
+      },
+      "description": "Centralize the current window."
+    }
+  }
+}
