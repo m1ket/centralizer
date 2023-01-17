@@ -20,7 +20,8 @@ function centralize() {
                             width: toBeWidth,
                             height: toBeHeight,
                             left: leftPos,
-                            top: topPos
+                            top: topPos,
+                            state: 'normal'
                         });
                 }
             });
